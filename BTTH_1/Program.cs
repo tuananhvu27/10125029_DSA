@@ -44,6 +44,8 @@ class BT_Chuong3
 
     static void Main(string[] args)
     {
+        Console.OutputEncoding = System.Text.Encoding.UTF8;
+
         Console.WriteLine("Bài 1: S(n) = 1 + 2 + 3 + ... + (n-1) + n");
         Console.WriteLine($"S(3) = {Bai1(3)}");
         Console.WriteLine($"S(6) = {Bai1(6)}");
@@ -90,6 +92,13 @@ class BT_Chuong3
         Console.WriteLine($"Số 1234 có {Bai7(1234)} chữ số");
         Console.WriteLine($"Số 171 có {Bai7(172)} chữ số");
         Console.WriteLine($"Số 123456 có {Bai7(123456)} chữ số");
+        Console.ReadKey();
+        Console.Clear();
+
+        Console.WriteLine("Bài 8: Tính S(n)");
+        Console.WriteLine($"S(3) = {Bai8(3)}");
+        Console.WriteLine($"S(6) = {Bai8(6)}");
+        Console.WriteLine($"S(9) = {Bai8(9)}");
         Console.ReadKey();
         Console.Clear();
     }
