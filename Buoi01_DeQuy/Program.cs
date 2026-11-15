@@ -4,32 +4,32 @@ class BT_Chuong3
 {
     static long Bai1(long n)
     {
-        return n == 1 ? 1 : n + Bai1(n-1);
+        return n == 1 ? 1 : n + Bai1(n - 1);
     }
 
     static long Bai2(long n)
     {
-        return n == 1 ? 1 : n*n + Bai2(n-1);
+        return n == 1 ? 1 : n * n + Bai2(n - 1);
     }
 
     static double Bai3(double n)
     {
-        return n == 1 ? 1 : (1/n) + Bai3(n-1);
+        return n == 1 ? 1 : (1 / n) + Bai3(n - 1);
     }
 
     static long Bai4(long m, int n)
     {
-        return n == 0 ? 1 : m * Bai4( m, n - 1);
+        return n == 0 ? 1 : m * Bai4(m, n - 1);
     }
 
     static int Bai5(int n)
     {
-        return n % 2 == 1 ? n : Bai5(n/2);
+        return n % 2 == 1 ? n : Bai5(n / 2);
     }
 
     static int Bai6(int a, int b)
     {
-        return a % b == 0 ? b : Bai6(b, a%b);
+        return a % b == 0 ? b : Bai6(b, a % b);
     }
 
     static int Bai7(int n)
@@ -39,7 +39,7 @@ class BT_Chuong3
 
     static double Bai8(double n, double i = 1)
     {
-        return n == i ? Math.Sqrt(n) : Math.Sqrt(i + Bai8(n,i+1));
+        return n == i ? Math.Sqrt(n) : Math.Sqrt(i + Bai8(n, i + 1));
     }
 
     static void Main(string[] args)
@@ -68,9 +68,9 @@ class BT_Chuong3
         Console.Clear();
 
         Console.WriteLine("Bài 4: Tính lũy thừa S(x,n) = x^n");
-        Console.WriteLine($"S(1,3) = {Bai4(1,3)}");
-        Console.WriteLine($"S(2,6) = {Bai4(2,6)}");
-        Console.WriteLine($"S(3,9) = {Bai4(3,9)}");
+        Console.WriteLine($"S(1,3) = {Bai4(1, 3)}");
+        Console.WriteLine($"S(2,6) = {Bai4(2, 6)}");
+        Console.WriteLine($"S(3,9) = {Bai4(3, 9)}");
         Console.ReadKey();
         Console.Clear();
 
@@ -82,9 +82,9 @@ class BT_Chuong3
         Console.Clear();
 
         Console.WriteLine("Bài 6: Tìm ước chung lớn nhất");
-        Console.WriteLine($"UCLN(6,3) = {Bai6(6,3)}");
-        Console.WriteLine($"UCLN(9,6) = {Bai6(9,6)}");
-        Console.WriteLine($"UCLN(24,32) = {Bai6(24,32)}");
+        Console.WriteLine($"UCLN(6,3) = {Bai6(6, 3)}");
+        Console.WriteLine($"UCLN(9,6) = {Bai6(9, 6)}");
+        Console.WriteLine($"UCLN(24,32) = {Bai6(24, 32)}");
         Console.ReadKey();
         Console.Clear();
 
